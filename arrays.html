@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let fruits = ["banana", "apple", "mango", "pineapple", "treetomato", "grapes", [1, 2, 3]]
+
+        console.log(fruits)
+
+        // accessing values inside an array
+        console.log(fruits[0][2])
+        console.log(fruits[6][0])
+
+        // modifying an array
+        fruits[4] = "kiwi"
+        console.log(fruits)
+
+        fruits[6][2] = 5
+
+        console.log(fruits)
+
+        // adding values into an array without altering array-PUSH
+        fruits.push(100)
+
+        console.log(fruits)
+        // removes the last digit-POP
+
+        fruits.pop()
+
+        console.log(fruits)
+        // removes the first element at the beginning-SHIFT
+
+        fruits.shift()
+
+        console.log(fruits)
+        // adds an element in the array at te beggining-UNSHIFT
+
+        fruits.unshift(1000)
+
+        console.log(fruits)
+
+        // joins two arrays-CONCAT
+        let a = [1, 2, 3, 4, 5]
+        let b = ["a", "b", "c", "d", "e"]
+        let c = a.concat(b)
+        console.log(c)
+
+        // JOIN converts array into a string
+        let d = ["a", "b", "c", "d"]
+
+        let e = d.join()
+
+        console.log(e)
+
+
+
+        //extract a certain part-Slice 
+        let f = d.slice(0, 3)
+
+        console.log(f)
+
+
+        // splice used to:
+        //    1.// delete 
+        d.splice(0, 3)
+        console.log(d)
+
+
+        //    2. // replace
+        let g = ["a", "b", "c", "d"]
+
+        g.splice(0, 2, 10, 20)
+        console.log(g)
+
+
+        //    3.// add value
+
+        let h=["a", "b", "c", "d"]
+
+        h.splice(1,0,2,3,4,5,6)
+        
+        console.log(h)
+
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
