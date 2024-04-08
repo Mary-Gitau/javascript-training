@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Create an array named colors with the following elements: 'red', 'green', 'blue'.
+
+        let colors = ["red", "green", "blue"]
+
+        console.log(colors)
+
+        // Access and Modify Array Elements
+        // Given the array fruits, access the second element and change it to 'pear'. Then, print the modified array.
+
+        let fruits = ["banana", "mangoes", "grapes", "apples"]
+
+        fruits[2] = "pear"
+
+        console.log(fruits)
+
+        // Determine the Length of an Array
+        // Given the array numbers, determine its length and store it in a variable lengthOfNumbers. Then, print lengthOfNumbers.
+
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        let lengthOfNumbers = numbers.length
+
+        console.log(lengthOfNumbers)
+
+        // Use .pop() Method
+        // Given the array languages, use the .pop() method to remove the last element from the array. Then, print the modified array.
+
+        let languages = ["English", "Kiswahili", "Spanish", "French", "Portugees"]
+
+        languages.pop()
+
+        console.log(languages)
+
+        // Assignment 1: Combine Arrays
+        // Given two arrays arr1 and arr2, combine them into a single array combinedArray using the .concat() method. /
+        // Then, remove the first element from combinedArray using the .shift() method. Finally, print the modified combinedArr
+        // ay.
+
+        let arr1 = [1, 2, 3, 4, 5, 6,]
+
+        let arr2 = ["Benze", "BMW", "Audi", "Isuzu", "Volkswagen"]
+
+        let arr3 = arr1.concat(arr2)
+
+        console.log(arr3)
+
+        arr3.shift()
+
+        console.log(arr3)
+
+
+        // Extract Subarray
+        // Given an array sourceArray, extract a subarray extractedArray from index 2 to index 4 (end index not inclusive) using the .
+        // slice() method. Then, modify the extractedArray by replacing its elements with 'x', 'y', and 'z' using the .splice() method.
+        //  Finally, print both the sourceArray and the modified extractedArray.
+
+
+        let sourceArray=["a","b","c","d","e","f","g"]
+
+        let a=sourceArray.slice(2,5)
+
+        console.log(a)
+
+
+        let sourceArray2=["a","b","c","d","e","f","g"]
+
+        sourceArray2.splice(2,3,"x","y","z")
+
+        console.log(sourceArray2)
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
