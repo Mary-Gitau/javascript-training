@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // creating an object
+        let person = {
+            name: 'Mary',
+            age: 25,
+            gender: "female",
+            name:"nyambura",
+            address:{
+                city:"Kiambu",
+                code:"234",
+                street:"Kirigiti"
+            }
+
+        }
+        console.log(person)
+        // accessing values in an object, we use keys
+        // by using the dot. notation 
+        console.log(person.name)
+
+        // by using square bracket[]
+        console.log(person["gender"])
+
+        // kiambu
+        console.log(person.address.city)
+
+        // adding elements in an object
+        let myobj={
+        }
+        myobj.name="Mary"
+        myobj.age="26"
+        myobj.gender="female"
+        myobj.address={location:"Eldoret","code":1000}
+        myobj["occupation"]="web developer"
+
+        // updating
+        myobj.name="Kevin"
+
+        // delete
+        delete myobj.occupation
+        console.log(myobj)
+        
+        // displaying keys or values
+        console.log(Object.keys(myobj))
+        console.log(Object.values(myobj))
+        console.log(Object.entries(myobj))
+
+    </script>
+</body>
+
+</html>

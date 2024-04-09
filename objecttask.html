@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Create a new file called objectTask and attempt the below questions:
+        // my_object= [23, “Jane”, 560, [“Lesson”, “Maths”, {“currency” : “KES”}], 987, 76,”John”]
+        // Display:
+        // 1. KES
+        // 2. 560
+        // 3. Maths
+        // KES
+        my_object = [23, "Jane", 560, ["Lesson", "Maths", {"currency" : "KES" }], 987, 76,"John"]
+        let myarr = my_object[3][2]["currency"]
+        console.log(myarr)
+
+        // 560
+        my_object = [23, "Jane", 560, ["Lesson", "Maths", {"currency" : "KES" }], 987, 76,"John"]
+        let myarr1=my_object[2]
+        console.log(myarr1)
+
+        // Maths
+        my_object = [23, "Jane", 560, ["Lesson", "Maths", {"currency" : "KES" }], 987, 76,"John"]
+        let myarr2=my_object[3][1]
+        console.log(myarr2)
+
+        //  In the object with the key currency, add another key “amount” with value 90
+        my_object = [23, "Jane", 560, ["Lesson", "Maths", {"currency" : "KES" }], 987, 76,"John"]
+        my_object[3][2].Amount=90
+        console.log(my_object)
+
+        // Reverse 987 to 789 without using an inbuilt -method or Assigning 789 manually.
+        my_object = [23, "Jane", 560, ["Lesson", "Maths", {"currency" : "KES" }], 987, 76,"John"]
+        // convert the number to a string
+        my_object[4]=String(my_object[4])
+        // convering it to an array to reverse it
+        my_object[4]=my_object[4].split("")
+        // reverse the array
+        my_object[4]=my_object[4].reverse()
+        // converting an array into a string
+        my_object[4]=my_object[4].join("")
+        // converting to number
+        my_object[4]=Number(my_object[4])
+        console.log(my_object)
+
+
+
+
+        // Change the name “John” to “Jane” . 
+        my_object=[23, "Jane", 560, ["Lesson", "Maths", {"currency" : "KES" }], 987, 76,"John"]
+        my_object[6]="Jane"
+        
+        console.log(my_object)
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+
+    </script>
+
+</body>
+
+</html>
