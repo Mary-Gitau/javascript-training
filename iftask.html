@@ -18,30 +18,29 @@
             console.log("Number is odd")
         }
         // Create 3 variables and console log the largest of them. Assume that the user would not enter any two numbers which are the same
-        let number1 = prompt("Enter Number:")
-        let number2 = prompt("Enter Number:")
-        let number3 = prompt("Enter Number:")
-        if (number1 > number2 >number3) {
-            console.log("number1 is greatest")
-        } else if (number2 > number1> number3) {
-            console.log("number2 is greatest")
+        let num1 = Number(prompt("Enter first Number:"))
+        let num2 = Number(prompt("Enter second Number:"))
+        let num3 = Number(prompt("Enter third Number:"))
+        if (num1 > num2  && num1 >num3) {
+            console.log(num1,": is greatest")
+        } else if (num2 > num1 && num2 >num3) {
+
+            console.log(num2,":is greatest")
         }
         else {
-            console.log("number3 is greatest")
+            console.log(num3,": is greatest")
         }
 
         // Create a variable called year and enter  a random year. 
         // Check if the year is a leap year or not.
         //  A leap year is a year that is divisible by 4 or  by 400, except for years that are divisible by 100.
-        let year=2018
+        let year= prompt("enter year")
 
-        if (year %4==0 && year %400==0){
-            console.log("year is a leap year")
-        }else if(year %100==0){
-            console.log("year a normal year")
+        if ((year %4==0 && year %100!=0) || (year %400==0)){
+            console.log("leap year")
         }
         else{
-            console.log("year not a leap year")
+            console.log(" not a leap year")
         }
     </script>
 
