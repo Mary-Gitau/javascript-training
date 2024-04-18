@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // write a function that say "hello world!"
+        function hello(){
+            console.log(`hello  ${name}`)
+        }
+        // parameters are variables only used inside a function
+        // arguments are exact values passed when calling a function
+
+        // call
+        let name=prompt("Enter first name")
+
+        hello(name)
+
+
+        // write a function that calculates the area of atriangle (use parameters)
+        // take the user input
+
+        function area_triangle(b,h){
+
+            let area=0.5*b*h
+            console.log(area)
+        }
+        let base=prompt("Enter your Base: ")
+        let height=prompt("Enter your Height: ")
+        
+        
+        area_triangle(base,height)
+
+
+        // write 2 function that calculates area of rectangle and square,take user input.
+        // area of rectangle
+        function area_rectangle(l,w){
+            let area=l*w
+            console.log(area)
+        }
+        let width=prompt("Enter width")
+        let length=prompt("Enter length")
+
+        area_rectangle(length, width)
+
+        // area of a square
+
+        function area_square(l){
+            let area=l**2
+            console.log(area)
+
+        }
+        let length2=prompt("Enter length")
+
+        area_square(length)
+
+
+        
+
+    </script>
+    
+</body>
+</html>
