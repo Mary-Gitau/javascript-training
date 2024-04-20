@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
 
         // write a function that say "hello world!"
-        function hello(){
+        function hello() {
             console.log(`hello  ${name}`)
         }
         // parameters are variables only used inside a function
         // arguments are exact values passed when calling a function
 
         // call
-        let name=prompt("Enter first name")
+        let name = prompt("Enter first name")
 
         hello(name)
 
@@ -24,44 +26,87 @@
         // write a function that calculates the area of atriangle (use parameters)
         // take the user input
 
-        function area_triangle(b,h){
+        function area_triangle(b, h) {
 
-            let area=0.5*b*h
+            let area = 0.5 * b * h
             console.log(area)
         }
-        let base=prompt("Enter your Base: ")
-        let height=prompt("Enter your Height: ")
-        
-        
-        area_triangle(base,height)
+        let base = prompt("Enter your Base: ")
+        let height = prompt("Enter your Height: ")
+
+
+        area_triangle(base, height)
 
 
         // write 2 function that calculates area of rectangle and square,take user input.
         // area of rectangle
-        function area_rectangle(l,w){
-            let area=l*w
+        function area_rectangle(l, w) {
+            let area = l * w
             console.log(area)
         }
-        let width=prompt("Enter width")
-        let length=prompt("Enter length")
+        let width = prompt("Enter width")
+        let length = prompt("Enter length")
 
         area_rectangle(length, width)
 
         // area of a square
 
-        function area_square(l){
-            let area=l**2
-            console.log(area)
+        function area_square(l) {
+            let area = l ** 2
+            return area
 
         }
-        let length2=prompt("Enter length")
+        let length2 = prompt("Enter length")
 
-        area_square(length)
+        let area_sq = area_square(length)
+        console.log(area_sq)
 
 
-        
+        // write a function if checks if a number is even or odd
+
+        function check_number(num) {
+            if (num % 2 == 0) {
+                result = "even"
+            } else {
+                result = "odd"
+            }
+            // return inside a function
+            return result
+        }
+        let number = check_number(100)
+
+        console.log(number)
+
+        // write a function that takes 3 inputs from a user, find the largest of all , 
+        // assume that all numbers are diferent
+
+        function check_largest(a,b,c){
+            if (num1>num2 && num1>num3){
+                result=`${num1}  is the largest`
+            }
+            else if (num2>num1 && num2>num3){
+                result= `${num2} is the largest`
+            }
+            else{
+                result= `${num3} is the largest`
+            }
+            return result
+        }
+
+        let num1=Number(prompt("Enter First Number"))
+        let num2=Number(prompt("Enter Second Number"))
+        let num3=Number(prompt("Enter Third Number"))
+
+        let largest_number=check_largest(num1,num2,num3)
+
+        console.log(largest_number)
+
+
+
+
 
     </script>
-    
+
 </body>
+
 </html>
